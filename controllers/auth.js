@@ -100,6 +100,9 @@ const renewToken = async (req, resp = response) => {
     resp.status(201).json({
       ok: true,
       msg: "Renew token",
+      uid,
+      name,
+      profile_img_url,
       token,
     });
   } catch (error) {
